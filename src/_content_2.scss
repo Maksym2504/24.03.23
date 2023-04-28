@@ -1,0 +1,50 @@
+.content_2{
+    display: flex;
+    align-items: flex-end;
+    height: 800px;
+}
+
+.group{
+    display: flex;
+    column-gap: 30px;
+    width: 90%;
+    margin:0 auto;
+    padding: 150px 0 200px;
+    align-items: flex-end;
+    @include tablet{
+        flex-direction: column;
+    }
+    
+    & div {
+        flex-basis: 30%;
+        flex-grow:1;
+    }
+
+    h2{
+       font:{
+        size: 17px;
+        weight:700
+       } 
+       line-height: 30px;
+       margin-top: 15px;
+    }
+
+    p{
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    &--violet{
+        border-top: 2px solid #6D3F96;
+        
+    }
+
+    &--blue{
+        border-top: 2px solid #70CBCE;
+    }
+    
+    &--orange{
+        border-top: 2px solid #FDC05D;
+    }
+
+}

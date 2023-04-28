@@ -1,0 +1,50 @@
+.footer{
+    display: flex;
+    justify-content: space-around; 
+    padding: 120px 0; 
+
+    @include tablet{
+        flex-direction: column;
+}
+}
+
+.left{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    @include tablet{
+        padding: 90px auto 30px;}
+    
+    font: {
+        family:$font_mont;
+        size: 21px;
+    };
+
+    color: $color_grey;
+}
+
+.right{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    @include tablet{
+        margin-top: 30px;}
+    
+        ul{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            @include tablet{
+                margin: 0 auto 80px;
+            }
+        }
+
+        li{
+            list-style-type: none;
+            padding: 20px;
+        }
+}

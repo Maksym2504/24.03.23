@@ -1,0 +1,99 @@
+.content_4{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    min-height: 100vh;
+
+.image{
+    &>img{
+        margin-top: 200px;
+       
+        @include phone{
+            width: 107px;
+} 
+
+
+}
+    }
+
+
+    .text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    &>h2{
+        font:{
+         size:40px;
+         weight:800;
+        } 
+        color:$color_black;
+        max-width: 790px; 
+        margin: 30px auto;
+    }
+    
+    &>p{
+        margin: 0 auto;
+        font:{
+             size:21px;
+             weight:400;
+         }
+         color:$color_black;
+         text-align: center;
+         max-width: 790px;
+         margin-bottom: 60px;
+     }
+}
+
+
+input{
+    display: block;
+    width: 380px;
+    height: 55px;
+    border: none;
+    border-radius: 3px;
+    margin-bottom: 30px;
+    outline: none;
+    padding: 0 35px;
+    font-size:21px;
+
+    &::placeholder{
+
+    }
+
+    @include tablet{
+        width: 475px;
+    }
+
+    @include phone{
+        width: 365px;
+    }
+}
+
+
+button{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-white;
+    width: 175px;
+    height: 55px;
+    background-color: $color_blue;
+    margin: 0 auto 200px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+
+    @include tablet{
+        width: 226px;
+    }
+
+    @include phone{
+        width: 240px;
+    }
+}
+
+}

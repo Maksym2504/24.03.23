@@ -1,0 +1,57 @@
+.content_1{
+    background: {
+        image:url(img/bg.png);
+        position: center top;
+        attachment: fixed;
+    }
+    position: relative;
+}
+
+.title_lead{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 100vh;
+
+    
+    h2{
+        margin: 77px auto 0;
+        font:{
+         size:40px;
+         weight:800;
+        } 
+        color:$color-white;
+        max-width: 790px;
+     }
+ 
+     p{
+        margin: 30px auto 67px;
+        font:{
+             size:21px;
+             weight:400;
+         }
+         color: $color-white;
+         text-align: center;
+         max-width: 790px;
+     }
+}
+
+.iphone{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 500px;
+    top: 260px;
+    left: 50%;
+    transform: translateX(-50%);
+    @include phone{
+        display: none;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+
+
