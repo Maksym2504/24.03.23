@@ -37,21 +37,21 @@
      }
 }
 
-.iphone{
-    display: flex;
-    justify-content: center;
-    position: absolute;
-    width: 500px;
-    top: 260px;
-    left: 50%;
-    transform: translateX(-50%);
-    @include phone{
-        display: none;
-    }
+// .iphone{
+//     display: flex;
+//     justify-content: center;
+//     position: absolute;
+//     width: 500px;
+//     top: 260px;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     @include phone{
+//         display: none;
+//     }
 
-    img {
-        width: 100%;
-    }
-}
+//     img {
+//         width: 100%;
+//     }
+// }
 
 
